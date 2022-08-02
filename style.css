@@ -1,0 +1,25 @@
+* {
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Background Color */
+
+body {
+    background-color: black;
+}
+nav {
+    background-color: black;
+    color: aliceblue;
+}
+
+/* position of main title */
+
+#cso {
+    position: relative;
+    text-align: center;
+    color: lightgrey;
+    top: 5%;
+}

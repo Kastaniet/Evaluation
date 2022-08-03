@@ -5,14 +5,26 @@
     box-sizing: border-box;
 }
 
+/* Import des font */ 
+@font-face {
+    font-family: 'retro_rescuedregular';
+    src: url('Font/retro_rescued-webfont.woff2') format('woff2'),
+         url('Font/retro_rescued-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'superscriptregular';
+    src: url('Font/superscr-webfont.woff2') format('woff2'),
+         url('Font/superscr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* Background Color */
 
-body {
+main, .navbar {
     background-color: black;
-}
-nav {
-    background-color: black;
-    color: aliceblue;
 }
 
 /* position of main title */
@@ -22,4 +34,63 @@ nav {
     text-align: center;
     color: lightgrey;
     top: 5%;
+}
+
+/* Mise en formes des Titres */ 
+
+h2, h3, h4, h5 {
+    font-family: 'retro_rescuedregular', 'superscriptregular', sans-serif;
+    color: lightslategray; 
+}
+
+/* About us */
+ 
+#about-us {
+    padding: 10px;
+    margin: 15px;
+}
+
+/* Card css */
+
+.card {
+    margin: 20px;
+}
+
+.card-text {
+    color: black;
+    font-size: large;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 3px rgba(252, 211, 122, 0.829), -1em -1em .8em -5px  rgb(87, 87, 87);
+}
+
+/* Button */
+
+.btn-primary {
+    color: #fff;
+    background-color: #0495c9;
+    border-color: #357ebd; /*set the color you want here*/
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #029c29 !important;
+    transition: background-color 0.2s linear 0.4s;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open>.dropdown-toggle.btn-secondary {
+    color: #fff;
+    background-color: rgb(78, 78, 78) !important;
+    transition: background-color 0.2s linear 0.4s;
+}
+
+@keyframes changeColor {
+    from { background: rgb(250, 25, 25); }
+    to   { background: green; }
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open>.dropdown-toggle.btn-danger {
+    color: #fff;
+    animation: 1.5s ease 0.2s infinite alternate changeColor;
 }

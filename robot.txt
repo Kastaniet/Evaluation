@@ -1,0 +1,13 @@
+User-agent:*
+
+#Dossiers
+Disallow: /images/
+
+#Pages
+Disallow: /contact
+
+Allow: /index
+Allow: /conventions
+Allow: /team
+
+sitemap: https://https://Kastaniet.github.io/sitemap.xml

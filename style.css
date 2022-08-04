@@ -96,7 +96,7 @@ label {
 
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open>.dropdown-toggle.btn-danger {
     color: #fff;
-    animation: 1.5s ease 0.2s infinite alternate changeColor;
+    animation: 1s ease 0.2s infinite alternate changeColor;
 }
 
 

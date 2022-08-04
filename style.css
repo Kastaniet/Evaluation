@@ -94,3 +94,10 @@ h2, h3, h4, h5 {
     color: #fff;
     animation: 1.5s ease 0.2s infinite alternate changeColor;
 }
+
+
+/* Image */ 
+#instagram {
+    height: 60px; 
+    width: 60px; 
+}
